@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(66, 66, 66); /* Dark purple background */
+  }
+  
+  .timer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid grey; /* Purple border color */
+    border-radius: 10px;
+    background-color: white; /* Light pink box background */
+    width: 600px; /* Adjust the width as desired */
+    height: 200px; /* Adjust the height as desired */
+  }
+  
+  .timer {
+    font-size: 6rem;
+    margin-bottom: 20px;
+    color: red; /* Pink text color */
+  }
+  
+  .timer-buttons button {
+    margin: 10px;
+    color: #FFF; /* White text color for buttons */
+    border: none;
+    border-radius: 5px;
+    padding: 20px 40px; /* Adjust the padding to increase button size */
+    font-size: 1rem; /* Increase the font size to make text bigger */
+    cursor: pointer;
+  }
+  
+  .start-button {
+    background-color: #00FF00; /* Green button background */
+  }
+  
+  .pause-button {
+    background-color: orange; /* Red button background */
+  }
+  
+  .reset-button {
+    background-color: red; /* Black button background */
+  }
+  .watermark {
+    position: absolute;
+    top:1px;
+    bottom: 0px;
+    right: 0px; /* Adjust the horizontal position of the watermark */
+    left:1px;
+    opacity: 1; /* Adjust the opacity of the watermark (optional) */
+    pointer-events: none; /* Ensure the watermark doesn't interfere with button clicks */
+    z-index: 1; /* Ensure the watermark is displayed on top of other elements */
+    height: 100px;
+    width: 100px;
+  }
+  .watermark-text {
+    position: absolute;
+    top: 10px; /* Adjust the vertical position of the text */
+    left: 50%; /* Center the text horizontally */
+    transform: translateX(-50%); /* Adjust to center the text */
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+    height: 20px
+  }
+  
